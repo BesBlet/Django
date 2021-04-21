@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Habarlar{% endblock %}
+
+{% block content %}
+
+    {% if lastest_news_list %}
+
+        {% for a in lastest_news_list %}
+        <ul class="list-content">
+            <h2><strong>{{a.news_title}}</strong></h2>
+            <p>{{ a.news_text }}</p>
+            <strong>{{ a.pub_date }}</strong>
+         </ul>
+
+		<hr>
+        {% endfor %}
+
+    {% else %}
+        Новости не найдены
+    {% endif %}
+
+
+{% endblock %}

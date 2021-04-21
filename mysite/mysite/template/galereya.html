@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Galereya</title>
+
+	<!--Galery scripst -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="{% static 'js/spinners/spinners.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lightview/lightview.js' %}"></script>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/lightview.css' %}" />
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/galery.css' %}" />
+<!--End of Galery scripst -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+ <link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}">
+    <link href="{% static favicon.ico %}" rel="shortcut icon" type="image/x-icon">
+</head>
+</head>
+<body>
+
+<header class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="position: relative; margin-bottom: 0px;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="text-top" href="{% url 'index' %}"><b>Habarlar</b></a></li>  
+            <li><a class="text-top" href="{% url 'hunar_url' %}"><b>Hünär</b></a></li>
+            <li><a class="text-top" href="{% url 'talyplara_url' %}"><b>Talyplara</b></a></li>
+            <li><a class="text-top" href="{% url 'contacts_url' %}"><b>Habarlaşmak üçin</b></a></li>
+            <!-- <li class="active"><a href="#">Главная</a></li>-->
+          </ul>
+        </div>
+      </div>
+</header>
+
+<div class="block-logo">
+		<div class="left-top">
+        	<div class="logo_img">
+				<img src="{% static 'logo2.png' %}" hspace="0" vspace="0" border="0" alt="To main page" style="">
+			</div>
+			<div class="title_head">
+          <h1 class="qwe"><b>Belarus Döwlet Informatika we Radioelektronika Uniwersiteti</b><h2>
+            	</div>
+            </div>
+            <div class="flags-center">
+              
+            </div>
+            <div class="right-top">
+            	<ul class="hr">
+            		<li><a class="text-top" href="#"><b>TKM</b></a></li>
+            		<li><a class="text-top" href="https://www.bsuir.by/ru/"><b>RU</b></a></li>
+            	</ul>
+            </div>
+</div>
+
+<div class="center-galery">
+	<ul class="galery">
+		<li class="image"><a href="{% static 'images/1.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/1.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/2.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/2.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/3.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/3.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/4.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/4.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/5.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/5.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/6.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/6.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/7.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/7.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/8.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/8.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/9.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/9.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/10.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/10.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/11.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/11.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/12.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/12.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/13.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/13.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/14.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/14.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/15.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/15.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/16.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/16.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/17.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/17.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/18.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/18.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/19.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/19.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/20.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/20.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/21.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/21.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/22.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/22.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/23.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/23.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/24.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/24.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/25.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/25.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/26.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/26.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/27.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/27.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/28.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/28.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/29.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/29.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/30.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/30.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/31.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/31.jpg'%}" alt=''/>
+</a></li>
+        <li class="image"><a href="{% static 'images/32.jpg' %}" class="lightview" data-lightview-options="skin:'mac'" data-lightview-group="mixed">
+<img src="{% static 'images/thumbnails/32.jpg'%}" alt=''/>
+</a></li>
+        
+		
+		<!--Video Blocks-->
+		<li class="image"><a href="{% static 'video/v1.mp4' %}" 
+   class="lightview" 
+   data-lightview-type="iframe" 
+   data-lightview-options="
+     width: 1024,
+     height: 600,
+     viewport: 'scale'
+   "><img src="{% static 'video/v-i.jpg' %}" alt=''/></a></li>
+   		<li class="image"><a href="{% static 'video/v2.mp4' %}" 
+   class="lightview" 
+   data-lightview-type="iframe" 
+   data-lightview-options="
+     width: 1024,
+     height: 600,
+     viewport: 'scale'
+   "><img src="{% static 'video/v-i.jpg' %}" alt=''/></a></li>
+   		<li class="image"><a href="{% static 'video/v3.mp4' %}"  
+   class="lightview" 
+   data-lightview-type="iframe" 
+   data-lightview-options="
+     width: 1024,
+     height: 600,
+     viewport: 'scale'
+   "><img src="{% static 'video/v-i.jpg' %}" alt=''/></a></li>
+   		<li class="image"><a href="{% static 'video/v4.mp4' %}"
+    class="lightview" 
+   data-lightview-type="iframe" 
+   data-lightview-options="
+     width: 1024,
+     height: 600,
+     viewport: 'scale'
+   "><img src="{% static 'video/v-i.jpg' %}" alt=''/></a></li>
+
+	</ul>
+</div>
+
+<!-- <div class='demonstrations'>
+  <a href="{% static 'images/whitepink.jpg' %}
+     class='lightview'
+     data-lightview-group='example'
+     data-lightview-title="Navigation"
+     data-lightview-caption="Lightview has mobile-friendly side buttons and pagination for easy navigation.">
+    <img src="{% static 'images/thumbnails/whitepink.jpg' %} alt=''/>
+  </a>
+
+  <a href="{% static 'images/white.jpg' %}"
+     class='lightview'
+     data-lightview-group='example'
+     data-lightview-title="Accessible"
+     data-lightview-caption="Navigation is also possible using the keyboard arrows and the mousewheel.">
+    <img src="{% static 'img/flagi.jpg' %} alt=''/>
+  </a>
+
+  <a href="{% static 'images/raindrop.jpg' %}
+     class='lightview'
+     data-lightview-group='example'
+     data-lightview-title="Slideshows"
+     data-lightview-caption="Groups have a built-in slideshow, click the play button or press the space bar to start it.">
+    <img src="{% static 'images/thumbnails/raindrop.jpg' %} alt=''/>
+  </a>
+
+</div> -->
+
+
+
+</div>
+
+</body>
+</html>

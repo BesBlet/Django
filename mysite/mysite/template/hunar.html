@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BSUIR</title>
+
+ <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+ <link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}">
+    <link href="{% static 'favicon.ico' %}" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+
+<header class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="position: relative; margin-bottom: 0px;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+    
+            <li><a class="text-top" href="{% url 'index' %}"><b>Habarlar</b></a></li>
+            <li><a class="text-top" href="{% url 'talyplara_url' %}"><b>Talyplara</b></a></li>
+            <li><a class="text-top" href="{% url 'galereya_url' %}"><b>Galereýa</b></a></li>
+            <li><a class="text-top" href="{% url 'contacts_url' %}"><b>Habarlaşmak üçin</b></a></li>
+            <!-- <li class="active"><a href="#">Главная</a></li>-->
+          </ul>
+        </div>
+      </div>
+</header>
+
+<div class="block-logo">
+		<div class="left-top">
+        	<div class="logo_img">
+				<img src="{% static 'logo2.png' %}" hspace="0" vspace="0" border="0" alt="To main page" style="">
+			</div>
+			<div class="title_head">
+          <h1 class="qwe"><b>Belarus Döwlet Informatika we Radioelektronika Uniwersiteti</b><h2>
+            	</div>
+            </div>
+            <div class="flags-center">
+              
+            </div>
+            <div class="right-top">
+            	<ul class="hr">
+            		<li><a class="text-top" href="#"><b>TKM</b></a></li>
+            		<li><a class="text-top" href="https://www.bsuir.by/ru/"><b>RU</b></a></li>
+            	</ul>
+            </div>
+</div>
+
+<div class="slider">
+    <ul id="slides">
+      <li class="slide showing"></li>
+      <li class="slide"></li>
+      <li class="slide"></li>
+    </ul>
+</div>
+
+<div class="container" id="cont">
+  <div class="text">
+    <h1 style="text-align: center;"><b>HÜNÄR</b></h1>
+     <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Fakultet</th>
+      <th scope="col">Hünär</th>
+      <th scope="col">Hünär ukuby</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" rowspan="9">Kompýuter proýektirowaniya fakulteti</th>
+      <td>Tayyarlama we kompyuter proyektirlerin radioelektron serishdeleri</td>
+      <td>Radioelektronika boýunça inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">2</th>-->
+      <td>Proýeksiýa çyzma we programmno-dolandyryş ulgamy</td>
+      <td>Inžener elektronik-programmist </td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">3</th>-->
+      <td>Mobil ulgamyny programmalaşdyrmak</td>
+      <td>Eletronny ulgamynyň inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Medesina elektronikasy</td>
+      <td>Inžener elektronik-programmist </td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Inžener-psihologik habar beriş üpjünçilik tehnologiýasy</td>
+      <td>Sistemotehnik inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Eletron ulgamynyň howpsyzlygy</td>
+      <td>Proektlendiriş inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Habar ulgamy we tehnologiýasy (önümçilik howsyzlygy üpjün etmek)</td>
+      <td>Sistemotehnik inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Habar ulgamy we tehnologiýasy (biznes menejmentde)</td>
+      <td>Programmist, işewürlik seljeriji</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Programmno-dolandyrylýan optika elektron ulgamy</td>
+      <td>Inžener elektronik-programmist</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="5">Habar beriş tehnologiýa we dolandyryş fakulteti</th>
+      <td>Habar beriş ulgamyny işläp çykarylmagyny awtomatlaşdyrylmak </td>
+      <td>Informasionnyý tehnologiýa boýunça inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Emeli intelekt</td>
+      <td>Sistemotehnik inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Tehnika ulgamynda habar beriş tehnologiýasyny dolandyrmak</td>
+      <td>Informasionnyý tehnologiýa we dolandyryş boýunça inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Önümçilik elektronikasy</td>
+      <td>Radioelektronika boýunça inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Habar beriş ulgamy we tehnologiýasy (oyun ulgamy)</td>
+      <td>Inžener-sistemnyý programmist. Dizaýner</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="9">Habar beriş tehnologiýa we dolandyryş fakulteti</th>
+      <td>Mikro we nanoelektron tehnologiýasy we ulgamy</td>
+      <td>Elektron tehnikasynyň inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Radiotehnika ( programmiruemyýe radioelektronnyýe gurallary )</td>
+      <td>Radioelektronika inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Radiotehnika ( san radioaragatnaşygynyň tehnikasy)</td>
+      <td>Radioelektronika inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Radioelektron ulgamy</td>
+      <td>Radioelektronika inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Radioinformatika</td>
+      <td>Radioinformatika inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Kwant habar beriş ulgamy </td>
+      <td>Elektron tehnikasynyň inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Radioelektron habar berişini goramak</td>
+      <td>Radioelektronika inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Elektronikanyň içinde nanotehnologiýa we nanomaterialy</td>
+      <td>Elektron tehnikasynyň inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Elektron we habar beriş dolandyryş ulgamyny fiziki gurnamak</td>
+      <td>Elektron ulgamynyň inženeri</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="4">Kompýuter ulgam we ulgamlarynyň fakulteti</th>
+      <td>Habar beriş tehnologiýasynyň programma üpjünçiligi</td>
+      <td>Inžener-programmist</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Hasaplaýjy maşyny, ulgam we seti</td>
+      <td>Inžener-sistemotehnik</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Informatika we programmirowaniýa tehnologiýasy</td>
+      <td>Inžener-sistemnyý programmist</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Elektron hasaplaýjy serişdesi</td>
+      <td>Inžener-sistemotehnik</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="7">Informasionkomunikasiýa fakulteti</th>
+      <td>Infokomunikasiýa tehnologiýasy (telekomunikasiýa ulgamy)</td>
+      <td>Infokommunikasiýa inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Infokomunikasiýa tehnologiýasy (infokommunikasiya seti)</td>
+      <td>Infokommunikasiýa inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Infokomunikasiýa tehnologiýasy (sifrowoýe tele we radiogepleşikleri)</td>
+      <td>Infokommunikasiýa inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Infokomunikasiýa tehnologiýasy (multimedia maglumatyny ulgama paýlaşdyrmak)</td>
+      <td>Infokommunikasiýa inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Infokomunikasiýa tehnologiýasy (lazer habar beriş ölçeg ulgamy)</td>
+      <td>Infokommunikasiýa inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Infokomunikasiýa ulgamy (standartlaşdyrma, sertifikatlandyryş we parametr kontroly)</td>
+      <td>Infokommunikasiýa ulgamynyň inženeri. Standartlaşdyrma, sertifikatlandyryş we parametr kontroly boýunça inženeri</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Telekomunikasiýa içinde maglumat goraýyş</td>
+      <td>Maglumaty goraýyş boýunça hünärmen. Telekommunikasiýa boýunça inženeri</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="4">Inžener-ykdysady fakulteti</th>
+      <td>Elektron biznesiniş ykdysadyýeti</td>
+      <td>Ykdysadyýetçi-programmist</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Elektron marketingi</td>
+      <td>Marketolog-programmist</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Informasion ulgamy we tehnologiýasy (ykdysadyýetde )</td>
+      <td>Inžener-programmist-ykdysadiýetçi</td>
+    </tr>
+    <tr>
+      <!--<th scope="row" rowspan="3">4</th>-->
+      <td>Informasion ulgamy we tehnologiýasy (logistikada)</td>
+      <td>Sistemnyý programmist-logistik</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{% static 'js/slider.js' %}"></script>
+</body>
+</html>

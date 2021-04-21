@@ -1,0 +1,160 @@
+/*all style*/
+html{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	text-align: center;
+}
+body{
+	background: radial-gradient(circle farthest-side,#2e518d 0%,#0d183e 70%,#040b29 100%);
+}
+/*header*/
+header{
+	background-color: #335991 !important;
+}
+ul.navbar-nav li{
+	margin-left: 120px;
+}
+.text-top{
+	color: #fff !important;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+a.text-top:hover{
+	color: #ecce24 !important;
+}
+/*logo block*/
+.block-logo{
+	height: 140px;
+	width: 100%;
+	position: relative;
+	z-index: 9;
+	display: inline-block;
+}
+.logo_img{
+	width: 70px;
+	float: left;
+	margin: 30px 10px 0 20%;
+}
+.title_head {
+    margin-right: 5px;
+    width: 380px;
+    color: #ffffff;
+    font-family: 'romulregular',Arial;
+    font-size: 100px;
+    letter-spacing: 2px;
+    float: left;
+}
+.qwe{
+	margin-top: 8%;
+	font-size: 25px !important;
+}
+.right-top{
+	height: 20px;
+	width: 120px;
+	margin-top: 50px;
+	margin-left: 5%;
+	float: left;
+}
+.right-top a{
+	text-decoration: none;
+	color: #fff;
+}
+ul.hr{
+	margin: 0; /* Обнуляем значение отступов */
+    padding: 4px;
+    width: 120px;
+}
+ul.hr li {
+    display: inline-block; /* Отображать как строчный элемент */
+    margin-right: 15px; /* Отступ слева */
+    padding: 3px; /* Поля вокруг текста */
+
+	color: #ecce24 !important;
+   }
+.flags-center{
+	width: 120px;
+	height: 89px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 10%;
+	background-image: url(../img/flag.png);
+}
+/*slider*/
+.slider{
+	z-index: 5;
+	position: relative;
+}
+/*content*/
+#cont{
+	background: linear-gradient(to right, #9ba1cc 1%, #FFF9ED 20%, #FFF9ED 80%, #9ba1cc 100%);
+	word-wrap: break-word;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width: 1200px;
+	border-radius: 10px;
+}
+/*table*/
+th{
+	font-size: 20px;
+	text-align: center;
+}
+td{
+	font-size: 15px;
+}
+
+/*Talyplara */
+/*list center*/
+.list-content{
+	list-style: none;
+}
+.item-content{
+	font-size: 20px;
+	margin-left: 20%;
+	margin-top: 1%;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: #1d2b4a8f; /* Цвет линии */
+    color: #1d2b4a8f; /* Цвет линии для IE6-7 */
+    height: 10px; /* Толщина линии */
+   }
+
+/*Galery*/
+/*galery-content*/
+.center-galery{
+	align-content: center;
+	text-align: center;
+	margin-left: -30px;
+}
+.galery{
+	list-style: none;
+}
+.image{
+	display: inline-block;
+	width: 250px;
+	height: 150px;
+	margin-left: 3%;
+	margin-top: 20px;
+}
+/*Contacts*/
+#tab{
+	background: #FFF9ED;
+	word-wrap: break-word;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width: 1200px;
+	border-radius: 10px;
+}
+td{
+	border: none !important;
+}
+.last-tab{
+	border-bottom: 1px solid #ddd !important;
+}
+.map-content{
+	margin-left: 12%;
+}
